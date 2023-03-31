@@ -3,9 +3,8 @@ import { useState,useEffect } from "react";
 
 const project = ({ data , className }) => {
 
-
   return (
-    <div key={data.name} className={`project-card ${className}` }>
+    <div className={`project-card ${className}` }>
       <div className="dataContainer">
         <img src={data.pic} alt={data.name} />
         <h1>{data.name}</h1>

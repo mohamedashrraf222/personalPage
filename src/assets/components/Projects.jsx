@@ -45,7 +45,7 @@ const Projects = () => {
         <MyComponent>
           {projects.map((project) => {
             
-            return <Project data={project} />;
+            return <Project data={project} key={project.key} />;
           })}
         </MyComponent>
       </div>
