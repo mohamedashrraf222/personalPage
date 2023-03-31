@@ -30,7 +30,7 @@ const Header = () => {
       <div className="logo-container">
         <Link to="/personalPage/">
           <img
-            src="/finalName-01.svg"
+            src="/personalPage/finalName-01.svg"
             className="mySVG"
           />
         </Link>
