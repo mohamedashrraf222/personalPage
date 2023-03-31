@@ -1,0 +1,30 @@
+/* Styles for container div */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  margin-top: 13vh;
+  align-items: center;
+}
+
+.project-card-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for responsive design */
+@media screen and (max-width: 800px) {
+  .project-card-container > *{
+    width: 40%;
+  }
+}
+/* Styles for responsive design */
+@media screen and (max-width: 500px) {
+  .project-card-container > * {
+    width: 90%;
+  }
+}
