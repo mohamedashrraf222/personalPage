@@ -14,7 +14,7 @@ const Contact = () => {
           <h1> <i class="fa-solid fa-phone"></i> phone number : <a href="tel:+201145642615"> +201145642615</a> </h1>
           <h1> <i class="fab fa-linkedin"></i> Linkedin : <a href="https://www.linkedin.com/in/mohamedashrraf222/">https://www.linkedin.com/in/mohamedashrraf222/</a></h1>
         </div>
-      <img src="/images/contact2.svg" className="mySVG" />
+      <img src="/personalPage/images/contact2.svg" className="mySVG" />
       </div>
         <Footer />
     </dir>
