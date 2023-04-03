@@ -1,5 +1,4 @@
 import "../styles/projectComp.css";
-import { useState,useEffect } from "react";
 
 const project = ({ data , className }) => {
 

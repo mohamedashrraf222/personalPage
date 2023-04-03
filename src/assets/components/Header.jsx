@@ -44,7 +44,7 @@ const Header = () => {
             <Link to="/personalPage/Projects">Projects</Link>
           </li>
           <li>
-            <Link to="/personalPage/Certificates-and-Skills">Certificates and Skills</Link>
+            <Link to="/personalPage/Certificates">Certificates and Skill</Link>
           </li>
           <li>
             <Link to="/personalPage/Contact">Contact Me</Link>

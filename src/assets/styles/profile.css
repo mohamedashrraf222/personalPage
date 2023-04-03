@@ -55,6 +55,8 @@
   opacity: 1;
   transform: translateX(0%);
 }
+
+
 @media only screen and (max-width: 768px) {
   .profile-container {
     flex-direction: column;

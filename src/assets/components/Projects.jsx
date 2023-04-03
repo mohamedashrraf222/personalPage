@@ -15,7 +15,6 @@ const MyComponent = ({ children }) => {
       if (index < React.Children.count(children)) {
         setIndex((prev) => prev + 1);
       }
-
     }, 200);
 
     return () => clearTimeout(timer);
@@ -36,18 +35,19 @@ const MyComponent = ({ children }) => {
 };
 
 const Projects = () => {
-
   return (
     <div>
       <Squars />
       <Header />
-      <div className="container" style={{ marginTop: "13vh" }}>
-        <MyComponent>
-          {projects.map((project) => {
-            
-            return <Project data={project} key={project.key} />;
-          })}
-        </MyComponent>
+      <div className="container" style={{ marginTop: "13vmin" }}>
+        <div className="skills">
+          <h1>Projects <i class="fa-solid fa-earth-americas"></i></h1>
+          <MyComponent>
+            {projects.map((project) => {
+              return <Project data={project} key={project.key} />;
+            })}
+          </MyComponent>
+        </div>
       </div>
       <Footer />
     </div>

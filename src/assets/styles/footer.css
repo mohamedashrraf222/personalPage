@@ -32,13 +32,13 @@
   color: rgb(255, 255, 255);
 }
 
-.social-icons a > i {
+.social-icons a > svg {
   font-size: 2vw;
   transition: 0.3s ease;
   margin-left: 5px;
 }
 
-.social-icons a:hover i {
+.social-icons a:hover svg {
   transform: scale(1.2);
 }
 
