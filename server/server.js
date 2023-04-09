@@ -15,7 +15,7 @@ const exp = require("constants");
 app.use(cors());
 
 // Setup Server
-const port = 4000;
+const port = process.env.PORT || 4000;
 app.listen(port, () => {
   console.log(`server is running on ${port}`);
 });
@@ -162,6 +162,5 @@ app.get("/mycirtificatesData", (req, res) => {
 
 // GET route to return our main page
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname + "/public/index.html"));
-  });
-  
+  res.sendFile(path.join(__dirname + "/public/index.html"));
+});
