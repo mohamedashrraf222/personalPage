@@ -1,0 +1,49 @@
+/* Styles for container div */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  margin-top: 13vh;
+  align-items: center;
+}
+
+.project-card-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills {
+  margin-top: -20px;
+  margin-bottom: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.skills > h1 {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  border: 3px solid #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Styles for responsive design */
+@media screen and (max-width: 800px) {
+  .project-card-container > *{
+    width: 40%;
+  }
+}
+/* Styles for responsive design */
+@media screen and (max-width: 500px) {
+  .project-card-container > * {
+    width: 90%;
+  }
+}
