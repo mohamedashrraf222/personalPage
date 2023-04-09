@@ -64,7 +64,7 @@ const Certificates = () => {
 
   useEffect(() => {
     setShowImage(true);
-    fetch("http://localhost:4000/mycirtificatesData")
+    fetch("/mycirtificatesData")
       .then((res) => res.json())
       .then((res) => setMine(res))
       .then(() => {
