@@ -1,0 +1,59 @@
+#contact-me {
+  height: calc(100vh - 40px - 50vh);
+  display: flex;
+  width: calc(100% - 20vw);
+  background-color: rgba(28, 28, 28, 0.24);
+  backdrop-filter: blur(5px);
+  margin: 25vh 10vw;
+  border-radius: 10px;
+  padding: 10vh 8vw ;
+}
+
+#contact-me>img{
+  position: absolute;
+  right: 10px;
+  height: 90%;
+  top: 20px;
+  opacity: 0.9;
+}
+
+#contact-me>div>h1{
+  color: white;
+  font-weight: 200;
+  font-size: 3.5vmin;
+  margin-bottom: 30px;
+}
+#contact-me a{
+  color: white;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1020px) {
+  #contact-me>img{
+    height: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  #contact-me>img{
+    position: relative;
+    top: 0px;
+    height: 70%;
+    margin-bottom: 20px;
+  }
+  #contact-me{
+    display: flex;
+    flex-direction: column-reverse;
+    height: calc(100vh - 40px - 20vh);
+    margin: 10vh auto;
+    padding: 20px;
+  }
+
+  #contact-me>div>h1{
+    font-size: 13px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+}
