@@ -148,13 +148,6 @@ app.get("/mycirtificatesData", (req, res) => {
       link: "https://freecodecamp.org/certification/fcc19a40b74-12c5-483e-80ef-a3fd0ce39418/responsive-web-design",
       picture: "/images/responsive web design.jpg",
     },
-    {
-      name: "verified certificate for Android Development Track",
-      about: "",
-      link: "https://drive.google.com/file/d/1iVXeGVMDmb4GZ1pdXXkJ9bVBHSFWLxYf/view?usp=sharing",
-      //   picture:
-      //     "https://lh3.googleusercontent.com/fife/AAbDypC6qBDzVtdcmUi416YfAh5NPYd3IkYxf2krOIvNcQE3B0xHuL_bd2BM9QUTw7phjj6CCIFbt--Iy2t1TLjQE-fXlwi1Qv0PDRTIwxjRMxPoeGsKpCAvJ49z_UJMgbFVaJIbXKxJ1PVh_K6io4pLJAGPgEXlRmD1FB6o93qcexAQK_9gv7dR9HNMtptIgsZ7VblbbyLIL528dUEqv2BDvqz6waW2JSZJ3Nydl5oIessR_oQlPjDNnpTDQZonrBVMY5w9I9e00qg7EzvvSqnKFLfJqzPBKLvn29rcRpBa4luOgLVvD8Oz9HrkHMJApdLP5aoI9qKov9ISwmH4dSqlRCFvgmxKBipJQ5tD2JukUrIqV_juXN5jquVOISw0Kgcm84f0kYuhmK42dU3rUV1ufnayLgJajLIN6rV404-0baBxFA8RmbwdbjJ0g-tSpRiM-JIXh-t9MXYkvFZnkBSVQgmcVg3p-Pr9wdy5BYUdYrkcU1kn5rgxKlYH319B-eekYK_Y2LOHeNRhOpCGJiVEdAh-t-nKiTnQ4qjLCkJCEn9Yft35_sUqzLzwv9YKY1tucDqX5SV2jaQSJ7tB315Zx46ryM94bFOVG6W8dnMOH4IjO5LMmGlHTpP8VZbEMDvGYvqe_ValU8-EtSCn354as2S3sbogdRmsFHeNa2epirdHMFBv47G9kVwpQWp0oZ10f9eTmObcBC7g95aggCEtLCpMQMcsLVYr6uVdFFStrsFSAu51KnCtJ2A_G7iShGySxZh5o34eer9IB47Y97Pq_ax5n5LLndII7XJRzQtEmsYxSKdbraDWkU9i3V8muJRQnlvTseKx6fJiZlfLFgkmprfoQ9lM2cHITchlJOAvahc87KePpg_bTOPGPra2FmQVDfPL2_EclUIwO8EVcxSalN4vn2wbNJmzPPa4_LYZj1A1wdMWy0xp_aEscIJ1nUx40IL_5xPH1PQZOhe7oSCvPm9Xb7Qh-vskdQwb8gHtnRSa5I2beaYIxqJCdFNRNqFgzHeBtU91M8aaOFMC5xavH8gBnzaJxaJLlYiYR5-DY_Jrjmea1mS4uiUEwL2zxVvdLGmsWP8SPUqillDy6LBb3S19qlZJXeZM5HsSTQDnJR5caElU9uEOmTmXP6pl-uJVEEhKUzUMT-qCa__LmtRWc9vTalvYavGwTzYz6KNHOWCnU1rsn0LJHsArCEVZPGsqGXsd6A5rlyVkoiXBRlZgrcKsxEqkyLequbwKHiqDK11kxn-MUeCmBME5yCtALVjoOMeOlkQAZeG2JhOJPIGAAo24W1ww8_LPiEEAjbpxv0LE4VyDwd-KpByvJkMEZ6VKcyBXESJYC3gPEd-_6rIDJEJn7YeEqNSN2JvGtHYQwUdoT64SzvupdC5IWchkSTNeTLcmal3TtrgCnieyp-bGiVSJBnSJP7zmBEFDC4JHGHQ3bTBaAPbCGGrlrsaUZU8rJo4PGBsmbnGSnMyfKdTutCYEBeHjfHrOpOYxKgDzXd5cr3m6RISPGR6dqbk_s6QFER656eFjkjAEZfvd0qaN5LJJV0vaKHw=w618-h652",
-    },
   ];
 
   res.json(myData);
