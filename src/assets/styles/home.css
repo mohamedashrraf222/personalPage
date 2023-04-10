@@ -1,0 +1,29 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+  cursor: default;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: #1C1C1C ;
+  overflow-x:hidden;
+}
+
+.centere{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: calc(100vh - 40px);
+}
+
+
+
