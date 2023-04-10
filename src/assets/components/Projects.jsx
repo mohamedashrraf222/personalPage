@@ -2,7 +2,7 @@ import Header from "./Header";
 import Squars from "./Squars";
 import Project from "./projectComp";
 import Footer from "./footer";
-import projects from "../../../public/projects";
+import Loading from "./Loading";
 import "../styles/projects.css";
 
 import React, { useState, useEffect, useRef } from "react";
@@ -35,21 +35,39 @@ const MyComponent = ({ children }) => {
 };
 
 const Projects = () => {
+  const [load, setLoad] = useState(false);
+  const [mine, setMine] = useState([]);
+
+  useEffect(() => {
+    fetch("/myProjectsData")
+      .then((res) => res.json())
+      .then((res) => setMine(res))
+      .then(() => {
+        setLoad(true);
+      });
+  }, []);
+
   return (
     <div>
       <Squars />
       <Header />
       <div className="container" style={{ marginTop: "13vmin" }}>
         <div className="skills">
-          <h1>Projects <i class="fa-solid fa-earth-americas"></i></h1>
+          <h1>
+            Projects <i className="fa-solid fa-earth-americas"></i>
+          </h1>
           <MyComponent>
-            {projects.map((project) => {
-              return <Project data={project} key={project.key} />;
-            })}
+            {load ? (
+              mine.map((project) => {
+                return <Project data={project} key={project.key} />;
+              })
+            ) : (
+              <Loading />
+            )}
           </MyComponent>
         </div>
       </div>
-      <Footer />
+      <Footer load={load}/>
     </div>
   );
 };

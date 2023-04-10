@@ -31,6 +31,7 @@
   border-radius: 20px;
   transition: all 0.5s ease-in-out;
   margin: 20px auto; /* centers the element horizontally */
+  text-decoration: none;
 }
 
 .cirtif:hover {
@@ -243,5 +244,11 @@
   .cirtif-front h1 {
     font-size: 15px;
     margin-top: 8px;
+  }
+
+  .skills{
+    width: 380px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }

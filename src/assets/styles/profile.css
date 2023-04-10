@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
-  padding: 40px 20px;
+  padding: 0 20px 40px;
   height: 90%;
 }
 
@@ -11,7 +11,7 @@
   width: 25%;
   aspect-ratio: 1 / 1.3;
   border-radius: 20px;
-  margin-left: 5%;;
+  margin-left: 5%;
   margin-right: 5%;
   opacity: 0;
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
@@ -41,7 +41,6 @@
   transform: translateX(-100%);
 }
 
-
 .profile-summary {
   font-size: 1.2em;
   line-height: 1.5;
@@ -55,7 +54,6 @@
   opacity: 1;
   transform: translateX(0%);
 }
-
 
 @media only screen and (max-width: 768px) {
   .profile-container {
@@ -78,3 +76,4 @@
     font-size: 1em;
   }
 }
+

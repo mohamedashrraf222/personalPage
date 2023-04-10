@@ -1,8 +1,8 @@
 import Squars from "./Squars";
 import Header from "./Header";
 import Footer from "./footer";
-import data from "../../../public/data";
 import "../styles/cirtificates.css";
+import Loading from "./Loading";
 
 import React, { useState, useEffect, useRef } from "react";
 
@@ -59,8 +59,17 @@ const Certificates = () => {
 
   const [showImage, setShowImage] = useState(false);
 
+  const [load, setLoad] = useState(false);
+  const [mine, setMine] = useState([]);
+
   useEffect(() => {
     setShowImage(true);
+    fetch("/mycirtificatesData")
+      .then((res) => res.json())
+      .then((res) => setMine(res))
+      .then(() => {
+        setLoad(true);
+      });
   }, []);
 
   return (
@@ -69,27 +78,35 @@ const Certificates = () => {
       <Header />
       <div className="cirtificatesPage">
         <div className="skills">
-          <h1>Skills <i class="fa-solid fa-gears"></i></h1>
+          <h1>
+            Skills <i className="fa-solid fa-gears"></i>
+          </h1>
           <div className={`logos ${showImage ? "show" : ""}`}>
-            <img src="/personalPage/images/html.png" alt="HTML5 Powered" title="HTML5" />
-            <img src="/personalPage/images/css.png" alt="css" title="CSS" />
-            <img src="/personalPage/images/js.png" alt="css" title="JavaScript" />
-            <img src="/personalPage/images/react.png" alt="css" title="ReactJs" />
-            <img src="/personalPage/images/node.png" is="node" alt="css" title="NodeJs" />
-            <img src="/personalPage/images/redux.png" alt="css" title="ReduxJs" />
+            <img src="/images/html.png" alt="HTML5 Powered" title="HTML5" />
+            <img src="/images/css.png" alt="css" title="CSS" />
+            <img src="/images/js.png" alt="css" title="JavaScript" />
+            <img src="/images/react.png" alt="css" title="ReactJs" />
+            <img src="/images/node.png" is="node" alt="css" title="NodeJs" />
+            <img src="/images/redux.png" alt="css" title="ReduxJs" />
           </div>
         </div>
-        <div className="skills" style={{marginTop:"10px"}}>
-          <h1>Certificates <i class="fa-solid fa-certificate"></i></h1>
+        <div className="skills" style={{ marginTop: "10px" }}>
+          <h1>
+            Certificates <i className="fa-solid fa-certificate"></i>
+          </h1>
           <div className="cirtifContainer">
             <MyComponent>
-              {data.map((cirtif) => {
-                return <MyCertificates cirtif={cirtif} key={cirtif.name} />;
-              })}
+              {load ? (
+                mine.map((cirtif) => {
+                  return <MyCertificates cirtif={cirtif} key={cirtif.name} />;
+                })
+              ) : (
+                <Loading />
+              )}
             </MyComponent>
           </div>
         </div>
-        <Footer />
+        <Footer load={load}/>
       </div>
     </div>
   );

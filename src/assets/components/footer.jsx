@@ -1,9 +1,9 @@
 import React from "react";
 import '../styles/footer.css'
 
-export default function Footer() {
+export default function Footer({load}) {
   return (
-    <div className="mainFooter--container">
+    <div className={load ? ("mainFooter--container"):("mainFooter--container absolute")}>
       <h1>® Mohamed Ashraf</h1>
       <div className="social-icons">
             <a href="https://www.linkedin.com/in/mohamedashrraf222/" target="_blank">linkedin <i className="fab fa-linkedin"></i></a>

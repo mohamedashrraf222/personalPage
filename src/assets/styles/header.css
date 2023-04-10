@@ -40,10 +40,7 @@ header {
   font-size: 1.1rem;
   position: relative;
   transition: color 0.2s ease-in-out;
-  
 }
-
-
 
 nav ul li a::before {
   content: "";
@@ -73,7 +70,6 @@ nav ul li a:hover::before {
   border: none;
   background: transparent;
 }
-
 
 .menu-toggle span {
   display: block;
@@ -115,7 +111,7 @@ nav ul li a:hover::before {
 }
 
 @media (max-width: 860px) {
-  :root{
+  :root {
     font-size: 13px;
   }
 
@@ -131,7 +127,7 @@ nav ul li a:hover::before {
     right: 0;
     top: 0;
     background: rgba(0, 0, 0, 0.466);
-    backdrop-filter: blur(5px); 
+    backdrop-filter: blur(5px);
     flex-direction: column;
     align-items: center;
     padding: 15px 10px;
@@ -141,7 +137,6 @@ nav ul li a:hover::before {
     width: 50vmin;
   }
 
-  
   nav {
     height: fit-content;
   }
@@ -154,7 +149,6 @@ nav ul li a:hover::before {
     opacity: 1;
     transform: translateX(0%);
     transition: all 0.5s ease-in-out;
-
   }
 
   .nav-container li {
@@ -167,7 +161,7 @@ nav ul li a:hover::before {
     display: none;
   }
 
-  .nav-container.open ul{
+  .nav-container.open ul {
     display: flex;
   }
 
@@ -183,8 +177,7 @@ nav ul li a:hover::before {
     z-index: 10;
   }
 
-  .menu-toggle.open span{
+  .menu-toggle.open span {
     background: white;
   }
-
 }
