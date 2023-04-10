@@ -15,7 +15,7 @@ function Profile() {
   return (
     <div className="profile-container">
       <img
-        src="/download.jfif"
+        src="/personalPage/download.jfif"
         alt="Profile"
         className={`profile-picture ${showImage ? "show" : ""}`}
       />

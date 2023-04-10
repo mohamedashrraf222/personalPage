@@ -73,12 +73,12 @@ const Certificates = () => {
             Skills <i className="fa-solid fa-gears"></i>
           </h1>
           <div className={`logos ${showImage ? "show" : ""}`}>
-            <img src="/images/html.png" alt="HTML5 Powered" title="HTML5" />
-            <img src="/images/css.png" alt="css" title="CSS" />
-            <img src="/images/js.png" alt="css" title="JavaScript" />
-            <img src="/images/react.png" alt="css" title="ReactJs" />
-            <img src="/images/node.png" is="node" alt="css" title="NodeJs" />
-            <img src="/images/redux.png" alt="css" title="ReduxJs" />
+            <img src="/personalPage/images/html.png" alt="HTML5 Powered" title="HTML5" />
+            <img src="/personalPage/images/css.png" alt="css" title="CSS" />
+            <img src="/personalPage/images/js.png" alt="css" title="JavaScript" />
+            <img src="/personalPage/images/react.png" alt="css" title="ReactJs" />
+            <img src="/personalPage/images/node.png" is="node" alt="css" title="NodeJs" />
+            <img src="/personalPage/images/redux.png" alt="css" title="ReduxJs" />
           </div>
         </div>
         <div className="skills" style={{ marginTop: "10px" }}>

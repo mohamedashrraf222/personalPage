@@ -2,9 +2,7 @@ import Home from "./assets/components/Home";
 import Projects from "./assets/components/Projects";
 import Certificates from "./assets/components/Cirtificates";
 import Contact from "./assets/components/Contact";
-import ScrollToTopOnRouteChange from "./assets/components/ScrollToTop";
-import { Router, Routes, Route, json } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { Routes, Route, json } from "react-router-dom";
 
 function App() {
 

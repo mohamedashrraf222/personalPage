@@ -9,7 +9,7 @@ let myData = [
     carefully about how to solve each part with code.`,
     link: "https://www.freecodecamp.org/certification/fcc19a40b74-12c5-483e-80ef-a3fd0ce39418/javascript-algorithms-and-data-structures",
     picture:
-    "/images/javascript.jpg",
+    "/personalPage/images/javascript.jpg",
   },
   {
     name: "React Development Cross-Skilling",
@@ -39,7 +39,7 @@ let myData = [
     about: "In this Responsive Web Design Certification, I've learned the languages that developers use to build webpages: HTML (Hypertext Markup Language) for content, and CSS (Cascading Style Sheets) for design. First, I built an application to learn the basics of HTML and CSS. Then, I learned modern techniques like CSS variables and practiced by building a web form. I have learned how to make webpages that respond to different screen sizes by building a Twitter card with Flexbox, and a complex blog layout with CSS Grid.",
     link: "https://freecodecamp.org/certification/fcc19a40b74-12c5-483e-80ef-a3fd0ce39418/responsive-web-design",
     picture:
-      "/images/responsive web design.jpg",
+      "/personalPage/images/responsive web design.jpg",
   },
   {
     name: "verified certificate for Android Development Track",
