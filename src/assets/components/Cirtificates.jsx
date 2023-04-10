@@ -2,7 +2,7 @@ import Squars from "./Squars";
 import Header from "./Header";
 import Footer from "./footer";
 import "../styles/cirtificates.css";
-import Loading from "./Loading";
+import myData from "../../../public/data";
 
 import React, { useState, useEffect, useRef } from "react";
 
@@ -59,17 +59,8 @@ const Certificates = () => {
 
   const [showImage, setShowImage] = useState(false);
 
-  const [load, setLoad] = useState(false);
-  const [mine, setMine] = useState([]);
-
   useEffect(() => {
     setShowImage(true);
-    fetch("/mycirtificatesData")
-      .then((res) => res.json())
-      .then((res) => setMine(res))
-      .then(() => {
-        setLoad(true);
-      });
   }, []);
 
   return (
@@ -96,17 +87,13 @@ const Certificates = () => {
           </h1>
           <div className="cirtifContainer">
             <MyComponent>
-              {load ? (
-                mine.map((cirtif) => {
-                  return <MyCertificates cirtif={cirtif} key={cirtif.name} />;
-                })
-              ) : (
-                <Loading />
-              )}
+              {myData.map((cirtif) => {
+                return <MyCertificates cirtif={cirtif} key={cirtif.name} />;
+              })}
             </MyComponent>
           </div>
         </div>
-        <Footer load={load}/>
+        <Footer />
       </div>
     </div>
   );

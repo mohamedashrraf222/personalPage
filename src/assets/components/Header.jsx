@@ -28,9 +28,9 @@ const Header = () => {
   return (
     <header className="navbar">
       <div className="logo-container">
-        <Link to="/">
+        <Link to="/personalPage/">
           <img
-            src="/finalName-01.svg"
+            src="/personalPage/finalName-01.svg"
             className="mySVG"
           />
         </Link>
@@ -38,16 +38,16 @@ const Header = () => {
       <nav className={`nav-container ${isMenuOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/personalPage/">Home</Link>
           </li>
           <li>
-            <Link to="/Projects">Projects</Link>
+            <Link to="/personalPage/Projects">Projects</Link>
           </li>
           <li>
-            <Link to="/Certificates">Certificates and Skill</Link>
+            <Link to="/personalPage/Certificates">Certificates and Skill</Link>
           </li>
           <li>
-            <Link to="/Contact">Contact Me</Link>
+            <Link to="/personalPage/Contact">Contact Me</Link>
           </li>
         </ul>
       </nav>

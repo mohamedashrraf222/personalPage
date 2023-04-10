@@ -1,4 +1,4 @@
-let projects = [
+let myProjects = [
   {
     name: "tenzies-game",
     descreption:
@@ -73,4 +73,4 @@ let projects = [
   },
 ];
 
-export default projects;
+export default myProjects;
