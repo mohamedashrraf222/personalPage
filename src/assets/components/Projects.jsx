@@ -42,11 +42,21 @@ const Projects = () => {
       <div className="container" style={{ marginTop: "13vmin" }}>
         <div className="skills">
           <h1>
+            web apps <i className="fa-brands fa-medapps"></i>
+          </h1>
+          <MyComponent>
+            {myProjects.map((project) => {
+              return <Project data={project} key={project.key} type="app" />;
+            })}
+          </MyComponent>
+        </div>
+        <div className="skills">
+          <h1>
             Projects <i className="fa-solid fa-earth-americas"></i>
           </h1>
           <MyComponent>
             {myProjects.map((project) => {
-              return <Project data={project} key={project.key} />;
+              return <Project data={project} key={project.key} type="project" />;
             })}
           </MyComponent>
         </div>
