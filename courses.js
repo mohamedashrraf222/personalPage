@@ -20,6 +20,14 @@ let myData = [
     "https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/d9cd177a-476e-4ec0-a50b-33ff3176428c.svg",
   },
   {
+    name: "Developing Front-End Apps with React",
+    about:
+      "Develop interactive user interfaces (UIs) and web applications using React, JSX, and ES6. Build dynamic websites and front-end applications quickly and easily with reusable React components.  Communicate and exchange data with external services using GET, POST, UPDATE, and DELETE requests.",
+    link: "https://coursera.org/verify/RV5RUBVPR58W",
+    picture:
+      "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~RV5RUBVPR58W/CERTIFICATE_LANDING_PAGE~RV5RUBVPR58W.jpeg",
+  },
+  {
     name: "Professional Front-End Web Development",
     about:
       "This is a nanodegreee cirtificate in Front-End web development from udacity. with this course I have Learned JavaScript Data Types, Understood logic and control flow, Learned how to write proper and correct JavaScript Syntax, Create web content using Javascript, Modify web content using Javascript, Manage website performance, Work with Node and Express to develop a web application, Build a webserver with nodeJS and Use promises to manage asynchronous Javascript.",
@@ -28,18 +36,32 @@ let myData = [
       "https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/006c05cc-5333-47b9-9e2f-8a105d1aa3b9.svg",
   },
   {
-    name: "concepts of version control with Git and GitHub",
+    name: "Concepts of version control with Git and GitHub",
     about: "In this course, I learned how to handle basic Git commands, Explore the Git log, Understand the meaning of 'branching', Use GitHub for storing your work online, Save files online with GitHub, and Use Git for version control.",
     link: "https://learn.365datascience.com/c/74da887de8/",
     picture:
       "https://365datascience.com/resources/certificates/CC-409B1E21C4.jpg",
   },
   {
+    name: "Getting Started with Git and GitHub",
+    about: "Learned basic Git concepts such as repositories and branches used for distributed version control and social coding. creating and sharing an open-source project on GitHub. Create GitHub repositories and branches, and perform pull requests (PRs) and merge operations, to collaborate on a team project.",
+    link: "https://coursera.org/verify/F8ULXTBHCERN",
+    picture:
+      "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~F8ULXTBHCERN/CERTIFICATE_LANDING_PAGE~F8ULXTBHCERN.jpeg",
+  },
+  {
     name: "Responsive Web Design",
-    about: "In this Responsive Web Design Certification, I've learned the languages that developers use to build webpages: HTML (Hypertext Markup Language) for content, and CSS (Cascading Style Sheets) for design. First, I built an application to learn the basics of HTML and CSS. Then, I learned modern techniques like CSS variables and practiced by building a web form. I have learned how to make webpages that respond to different screen sizes by building a Twitter card with Flexbox, and a complex blog layout with CSS Grid.",
+    about: "In this Responsive Web Design course, I've learned the languages that developers use to build webpages: HTML (Hypertext Markup Language) for content, and CSS (Cascading Style Sheets) for design. First, I built an application to learn the basics of HTML and CSS. Then, I learned modern techniques like CSS variables and practiced by building a web form. I have learned how to make webpages that respond to different screen sizes by building a Twitter card with Flexbox, and a complex blog layout with CSS Grid.",
     link: "https://freecodecamp.org/certification/fcc19a40b74-12c5-483e-80ef-a3fd0ce39418/responsive-web-design",
     picture:
       "https://live.staticflickr.com/65535/52808358923_9f8f0a043e_o.jpg",
+  },
+  {
+    name: "Introduction to cloud computing",
+    about: "What I learned from this course what is cloud computing and the essential characteristics of cloud. Learned about the cloud service models Describe cloud service models, cloud deployment models, and cloud infrastructure ",
+    link: "https://coursera.org/verify/GXAPTZ3QDGVD",
+    picture:
+      "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~GXAPTZ3QDGVD/CERTIFICATE_LANDING_PAGE~GXAPTZ3QDGVD.jpeg",
   },
 ];
 
