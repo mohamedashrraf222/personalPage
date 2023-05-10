@@ -1,6 +1,15 @@
 const app = "app"
 const project = "project"
 
+const html = "/personalPage/images/html.png"
+const JavaScript = "/personalPage/images/js.png"
+const react = "/personalPage/images/react.png"
+const node = "/personalPage/images/node.png"
+const redux = "/personalPage/images/redux.png"
+const css = "/personalPage/images/css.png"
+const mongo = "/personalPage/images/mongo.png"
+
+
 let myProjects = [
   {
     name: "tenzies-game",
@@ -11,6 +20,21 @@ let myProjects = [
     key: 1,
     demo: "https://mohamedashrraf222.github.io/tenzies-game/",
     type: app,
+    skills:[
+      html,css,JavaScript,react
+    ]
+  },
+  {
+    name: "Restaurants App",
+    descreption:"This is a full MERN stack project that I have created along with freecodecampe video. when I recreated this project I learned the basics of creating a database with mongo DB, handle routes and creating data access object (DAO) to take the data from the server and then responding to the frontend accourding to search name or zip code or cuisine.  ",
+    pic:"/personalPage/images/restaurants.jpg",
+    github: "https://github.com/mohamedashrraf222/restaurantsWebApp.git",
+    key: 11,
+    demo:"https://restaurants-web-app.onrender.com/",
+    type : app,
+    skills:[
+      html,css,JavaScript,node,mongo
+    ]
   },
   {
     name: "My Reads App",
@@ -21,6 +45,9 @@ let myProjects = [
     key: 2,
     demo: "https://mohamedashrraf222.github.io/myReadsApp/",
     type: app,
+    skills:[
+      html,css,JavaScript,react
+    ]
   },
   {
     name: "weather Journal App",
@@ -29,8 +56,11 @@ let myProjects = [
     pic: "/personalPage/images/weather.jpg",
     github: "https://github.com/mohamedashrraf222/Weather-Journal-App.git",
     key: 3,
-    demo: "https://codepen.io/mohamedashrraf222/pen/oNyWqap",
+    demo: "https://wether-web-app.onrender.com/",
     type: app,
+    skills:[
+      html,css,JavaScript,node
+    ]
   },
   {
     name: "meme genrator",
@@ -41,6 +71,9 @@ let myProjects = [
     key: 4,
     demo: "https://mohamedashrraf222.github.io/memeGenratorScrimba/",
     type: app,
+    skills:[
+      html,css,JavaScript,react
+    ]
   },
   {
     name: "Credit Card Checker",
@@ -51,6 +84,9 @@ let myProjects = [
     key: 5,
     demo: "https://mohamedashrraf222.github.io/creditCardChecker/",
     type: app,
+    skills:[
+      html,css,JavaScript,react
+    ]
   },
   {
     name: "Load Numbers",

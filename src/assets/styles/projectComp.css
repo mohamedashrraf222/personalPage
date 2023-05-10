@@ -20,8 +20,7 @@ body {
   transition: all 1s ease;
 }
 
-
-.dataContainer{
+.dataContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -33,30 +32,38 @@ body {
   box-shadow: rgba(0, 0, 0, 0) 0px 1px 4px;
 }
 
-.project-card:hover .dataContainer{
+.project-card:hover .dataContainer {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.336) 0px 1px 4px;
   transition: all 1s ease;
 }
 
-.project-card:hover img{
+.project-card:hover .dataContainer > img {
   scale: 1.1;
   transition: all 0.4s ease;
 }
 
-.dataContainer h1{
+.dataContainer h1 {
   font-size: 1.8rem;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.dataContainer p{
+.dataContainer p {
   margin-bottom: 20px;
   font-size: 1rem;
   font-weight: 400;
 }
 
+.projectSkills{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 
+.projectSkill {
+  width: 35px !important
+}
 
 .project-card img {
   width: 50%;
@@ -72,7 +79,7 @@ body {
   margin: 10px 0;
 }
 
-.allLinks{
+.allLinks {
   display: flex;
   height: 50px;
   justify-content: space-around;
@@ -80,25 +87,23 @@ body {
   width: 100%;
 }
 
-.allLinks>a{
+.allLinks > a {
   color: black;
   font-size: 0.9rem;
   transition: all 0.3s ease;
   text-decoration: none;
 }
 
-.allLinks>a:hover{
+.allLinks > a:hover {
   font-size: 1.02rem;
   transition: all 0.3s ease;
 }
 
-.allLinks>a:visited{
+.allLinks > a:visited {
   color: black;
 }
 
-.show{
+.show {
   transform: translateX(0);
   opacity: 1;
 }
-
-

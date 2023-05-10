@@ -2,7 +2,7 @@ import Header from "./Header";
 import Squars from "./Squars";
 import Project from "./projectComp";
 import Footer from "./footer";
-import myProjects from './../../../public/projects'
+import myProjects from "./../../../public/projects";
 import "../styles/projects.css";
 
 import React, { useState, useEffect, useRef } from "react";
@@ -43,6 +43,9 @@ const Projects = () => {
         <div className="skills">
           <h1>
             web apps <i className="fa-brands fa-medapps"></i>
+            <div>
+              Note: Node web apps take time to load becuase the server is deployed for free.
+            </div>
           </h1>
           <MyComponent>
             {myProjects.map((project) => {
@@ -52,11 +55,13 @@ const Projects = () => {
         </div>
         <div className="skills">
           <h1>
-            Projects <i className="fa-solid fa-earth-americas"></i>
+            Static Projects <i className="fa-solid fa-earth-americas"></i>
           </h1>
           <MyComponent>
             {myProjects.map((project) => {
-              return <Project data={project} key={project.key} type="project" />;
+              return (
+                <Project data={project} key={project.key} type="project" />
+              );
             })}
           </MyComponent>
         </div>

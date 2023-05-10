@@ -2,7 +2,7 @@ import Squars from "./Squars";
 import Header from "./Header";
 import Footer from "./footer";
 import "../styles/cirtificates.css";
-import myData from "../../../public/data";
+import myData from "../../../public/courses";
 
 import React, { useState, useEffect, useRef } from "react";
 
@@ -34,6 +34,9 @@ const MyComponent = ({ children }) => {
 };
 
 const Certificates = () => {
+  const windowWidth = window.innerWidth;
+
+  console.log(`Window width: ${windowWidth}px`);
   const MyCertificates = ({ className, cirtif }) => {
     return (
       <a
@@ -73,17 +76,41 @@ const Certificates = () => {
             Skills <i className="fa-solid fa-gears"></i>
           </h1>
           <div className={`logos ${showImage ? "show" : ""}`}>
-            <img src="/personalPage/images/html.png" alt="HTML5 Powered" title="HTML5" />
+            <img
+              src="/personalPage/images/html.png"
+              alt="HTML5 Powered"
+              title="HTML5"
+            />
             <img src="/personalPage/images/css.png" alt="css" title="CSS" />
-            <img src="/personalPage/images/js.png" alt="css" title="JavaScript" />
-            <img src="/personalPage/images/react.png" alt="css" title="ReactJs" />
-            <img src="/personalPage/images/node.png" is="node" alt="css" title="NodeJs" />
-            <img src="/personalPage/images/redux.png" alt="css" title="ReduxJs" />
+            <img
+              src="/personalPage/images/js.png"
+              alt="css"
+              title="JavaScript"
+            />
+            <img
+              src="/personalPage/images/react.png"
+              alt="css"
+              title="ReactJs"
+            />
+            <img
+              src="/personalPage/images/node.png"
+              is="node"
+              alt="css"
+              title="NodeJs"
+            />
+            <img
+              src="/personalPage/images/redux.png"
+              alt="css"
+              title="ReduxJs"
+            />
           </div>
         </div>
         <div className="skills" style={{ marginTop: "10px" }}>
           <h1>
             Certificates <i className="fa-solid fa-certificate"></i>
+            {windowWidth >= 900 ? <div>
+              Note: Hover over the cirtificate to know details about the course.
+            </div> : ""}
           </h1>
           <div className="cirtifContainer">
             <MyComponent>

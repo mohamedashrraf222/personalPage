@@ -136,6 +136,7 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  position: relative;
 }
 
 .skills > h1 {
@@ -146,10 +147,21 @@
   padding: 10px;
   border-radius: 10px;
   text-align: center;
+  margin-bottom: 20px;
+}
+.skills > h1 > div {
+  font-weight: 100;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 0px;
+  position: absolute;
+  transform: translate(-50%, 20px);
+  left: 50%;
+  margin-top: 5px
 }
 
-.skills>h1::after {
-  content: ""; 
+.skills > h1::after {
+  content: "";
   position: relative;
   margin-top: 5px;
   left: -10px;
@@ -159,15 +171,14 @@
   height: 3px;
 }
 
-.logos img{ 
+.logos img {
   width: 64px;
   height: 64px;
 }
 
-#node{
+#node {
   width: 75px;
 }
-
 
 @media screen and (max-width: 900px) {
   .cirtif {
@@ -215,18 +226,18 @@
     margin-top: 60px;
   }
 
-  .logos{
+  .logos {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .logos img{ 
+  .logos img {
     width: 50px;
     height: 50px;
     margin: 10px;
   }
 
-  #node{
+  #node {
     width: 60px;
   }
 }
@@ -246,7 +257,7 @@
     margin-top: 8px;
   }
 
-  .skills{
+  .skills {
     width: 380px;
     margin-left: 0;
     margin-right: 0;
