@@ -43,10 +43,12 @@ const Projects = () => {
         <div className="skills">
           <h1>
             web apps <i className="fa-brands fa-medapps"></i>
-            <div>
-              Note: Node web apps take time to load becuase the server is deployed for free.
-            </div>
           </h1>
+          {/* note that the class skillsNote is in the cirtificates.css file */}
+          <div className="skillsNote" >
+            Note: Node web apps take time to load becuase the server is deployed
+            for free.
+          </div>
           <MyComponent>
             {myProjects.map((project) => {
               return <Project data={project} key={project.key} type="app" />;

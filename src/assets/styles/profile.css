@@ -70,7 +70,7 @@
   }
 
   .profile-name {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
 
   .profile-summary {
@@ -82,11 +82,17 @@
   .profile-picture {
     aspect-ratio: 1 / 1.3;
     width: 150px;
-    margin-top: 10vh;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
   }
 
+  .profile-summary {
+    font-size: 0.8em;
+  }
+
+  .profile-name {
+    font-size: 1.6em;
+  }
 }
 

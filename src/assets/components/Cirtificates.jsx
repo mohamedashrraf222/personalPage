@@ -108,10 +108,11 @@ const Certificates = () => {
         <div className="skills" style={{ marginTop: "10px" }}>
           <h1>
             Certificates <i className="fa-solid fa-certificate"></i>
-            {windowWidth >= 900 ? <div>
+
+          </h1>
+          {windowWidth >= 900 ? <div className="skillsNote">
               Note: Hover over the cirtificate to know details about the course.
             </div> : ""}
-          </h1>
           <div className="cirtifContainer">
             <MyComponent>
               {myData.map((cirtif) => {

@@ -180,4 +180,9 @@ nav ul li a:hover::before {
   .menu-toggle.open span {
     background: white;
   }
+
+  .logo-container img {
+    max-height: 3.9rem;
+  }
+
 }
