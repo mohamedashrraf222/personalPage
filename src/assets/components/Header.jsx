@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import "../styles/header.css";
 
 const Header = () => {
@@ -28,26 +27,23 @@ const Header = () => {
   return (
     <header className="navbar">
       <div className="logo-container">
-        <Link to="/personalPage/">
-          <img
-            src="/personalPage/finalName-01.svg"
-            className="mySVG"
-          />
-        </Link>
+        <a>
+          <img src="/personalPage/finalName-01.svg" className="mySVG" />
+        </a>
       </div>
       <nav className={`nav-container ${isMenuOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <Link to="/personalPage/">Home</Link>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <Link to="/personalPage/Projects">Projects</Link>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <Link to="/personalPage/Certificates">Certificates and Skill</Link>
+            <a href="#Certificates-and-Skill">Certificates and Skill</a>
           </li>
           <li>
-            <Link to="/personalPage/Contact">Contact Me</Link>
+            <a href="#contact-me">Contact Me</a>
           </li>
         </ul>
       </nav>

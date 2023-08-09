@@ -60,6 +60,10 @@ nav ul li a:hover::before {
   transform-origin: left;
 }
 
+a:hover{
+  cursor: pointer;
+}
+
 .menu-toggle {
   display: none;
   width: 30px;

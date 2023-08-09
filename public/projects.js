@@ -12,9 +12,9 @@ const mongo = "/personalPage/images/mongo.png"
 
 let myProjects = [
   {
-    name: "tenzies-game",
+    name: "Tenzies-game",
     descreption:
-      "This is a tenzies-game that I have created along with scrimba's React course. In this project I used React components and states to update the page with the user interactions",
+      "This is tenzies game that I have created for practice while learning Reacts. I created its algorithm along with scrimba's React course. You are able to hold the number by clicking on it so when you roll it will not change. To win you have to roll and hold the number until making all squares with the same number.",
     pic: "/personalPage/images/tenzies-game.jpg",
     github: "https://github.com/mohamedashrraf222/tenzies-game.git",
     key: 1,
@@ -30,7 +30,7 @@ let myProjects = [
     pic:"/personalPage/images/restaurants.jpg",
     github: "https://github.com/mohamedashrraf222/restaurantsWebApp.git",
     key: 11,
-    demo:"https://restaurants-web-app.onrender.com/",
+    demo:"",
     type : app,
     skills:[
       html,css,JavaScript,node,mongo
@@ -56,7 +56,7 @@ let myProjects = [
     pic: "/personalPage/images/weather.jpg",
     github: "https://github.com/mohamedashrraf222/Weather-Journal-App.git",
     key: 3,
-    demo: "https://wether-web-app.onrender.com/",
+    demo: "",
     type: app,
     skills:[
       html,css,JavaScript,node
@@ -137,6 +137,26 @@ let myProjects = [
     key: 10,
     demo: "https://codepen.io/mohamedashrraf222/pen/RwaYaYy?editors=1100",
     type: project,
+  },
+  {
+    name: "Flask translator web app",
+    descreption:
+    "In this project there is a flask server that handles routes and request. There are funcions that contact with LanguageTranslatorV3 from IBM services to translate the needed text entered from the frontend. When the user enter text, the server uses translator.py that's imported to server.py to get the translation of the text.",
+    pic: "/personalPage/images/myPage.jpg",
+    github: "https://github.com/mohamedashrraf222/Flask_translator_web_app",
+    key: 11,
+    demo: "",
+    type: app,
+  },
+  {
+    name: "Django online courses app",
+    descreption:
+    "This project is a django app for online courses that you can login and enroll to the courses and take exams. Created from starter code repository that was forked from IBM. There are many functions and classes in view.py to handle diffrent routes in urls.py",
+    pic: "/personalPage/images/myPage.jpg",
+    github: "https://github.com/mohamedashrraf222/Django_online_courses_app",
+    key: 12,
+    demo: "",
+    type: app,
   },
 ];
 

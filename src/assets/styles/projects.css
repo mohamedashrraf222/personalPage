@@ -1,4 +1,8 @@
 /* Styles for container div */
+body{
+  color:black;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -17,7 +21,7 @@
 }
 
 .skills {
-  margin-top: -20px;
+  margin-top: 0px;
   margin-bottom: 10px;
   align-items: center;
   display: flex;

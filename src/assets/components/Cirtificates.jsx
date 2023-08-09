@@ -1,48 +1,18 @@
-import Squars from "./Squars";
-import Header from "./Header";
-import Footer from "./footer";
 import "../styles/cirtificates.css";
 import myData from "../../../public/courses";
 
-import React, { useState, useEffect, useRef } from "react";
-
-const MyComponent = ({ children }) => {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (index < React.Children.count(children)) {
-        setIndex((prev) => prev + 1);
-      }
-    }, 200);
-
-    return () => clearTimeout(timer);
-  }, [index, children]);
-
-  return (
-    <div className={`parent-element`}>
-      {React.Children.map(children, (child, i) => {
-        let className = "";
-        if (React.isValidElement(child)) {
-          className = i < index ? "show" : "";
-        }
-
-        return React.cloneElement(child, { className });
-      })}
-    </div>
-  );
-};
+import React, { useState, useEffect } from "react";
 
 const Certificates = () => {
   const windowWidth = window.innerWidth;
 
   console.log(`Window width: ${windowWidth}px`);
-  const MyCertificates = ({ className, cirtif }) => {
+  const MyCertificates = ({ cirtif }) => {
     return (
       <a
         key={cirtif.name}
         href={cirtif.link}
-        className={`cirtif beforeShow ${className}`}
+        className={`cirtif beforeShow show`}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -67,10 +37,8 @@ const Certificates = () => {
   }, []);
 
   return (
-    <div>
-      <Squars />
-      <Header />
-      <div className="cirtificatesPage">
+    <>
+      <div className="cirtificatesPage" id="Certificates-and-Skill">
         <div className="skills">
           <h1>
             Skills <i className="fa-solid fa-gears"></i>
@@ -114,16 +82,15 @@ const Certificates = () => {
               Note: Hover over the cirtificate to know details about the course.
             </div> : ""}
           <div className="cirtifContainer">
-            <MyComponent>
+          <div className={`parent-element`}>
               {myData.map((cirtif) => {
                 return <MyCertificates cirtif={cirtif} key={cirtif.name} />;
               })}
-            </MyComponent>
+            </div>
           </div>
         </div>
-        <Footer />
       </div>
-    </div>
+    </>
   );
 };
 
