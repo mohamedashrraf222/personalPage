@@ -1,4 +1,3 @@
-import "../styles/projectComp.css";
 
 const project = ({ data, className,type }) => {
   if (data.type == type) {

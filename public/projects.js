@@ -21,19 +21,19 @@ let myProjects = [
     demo: "https://mohamedashrraf222.github.io/tenzies-game/",
     type: app,
     skills:[
-      html,css,JavaScript,react
+      JavaScript,react
     ]
   },
   {
     name: "Restaurants App",
-    descreption:"This is a full MERN stack project that I have created along with freecodecampe video. when I recreated this project I learned the basics of creating a database with mongo DB, handle routes and creating data access object (DAO) to take the data from the server and then responding to the frontend accourding to search name or zip code or cuisine.  ",
+    descreption:"This is a full MERN stack project that I have created along with freecodecampe. when I created this project I learned basics of creating a database with mongo DB, handle routes and creating data access object (DAO) to get the data from the server accourding to search name or zip code or cuisine.",
     pic:"/personalPage/images/restaurants.jpg",
     github: "https://github.com/mohamedashrraf222/restaurantsWebApp.git",
-    key: 11,
+    key: 6,
     demo:"https://restaurants-web-app.onrender.com/",
     type : app,
     skills:[
-      html,css,JavaScript,node,mongo
+      JavaScript,node,mongo
     ]
   },
   {
@@ -46,7 +46,7 @@ let myProjects = [
     demo: "https://mohamedashrraf222.github.io/myReadsApp/",
     type: app,
     skills:[
-      html,css,JavaScript,react
+      JavaScript,react
     ]
   },
   {
@@ -59,7 +59,7 @@ let myProjects = [
     demo: "https://wether-web-app.onrender.com/",
     type: app,
     skills:[
-      html,css,JavaScript,node
+      JavaScript,node
     ]
   },
   {
@@ -72,7 +72,7 @@ let myProjects = [
     demo: "https://mohamedashrraf222.github.io/memeGenratorScrimba/",
     type: app,
     skills:[
-      html,css,JavaScript,react
+      JavaScript,react
     ]
   },
   {
@@ -85,58 +85,8 @@ let myProjects = [
     demo: "https://mohamedashrraf222.github.io/creditCardChecker/",
     type: app,
     skills:[
-      html,css,JavaScript,react
+      JavaScript,react
     ]
-  },
-  {
-    name: "Load Numbers",
-    descreption:
-    "This is just a complement project that can be drived in a large project.",
-    pic: "https://live.staticflickr.com/65535/52807402622_289d563cdb_o.png",
-    github: "https://github.com/mohamedashrraf222/loadNumbers.git",
-    key: 6,
-    demo: "https://mohamedashrraf222.github.io/loadNumbers/",
-    type: project,
-  },
-  {
-    name: "React Facts",
-    descreption:
-    "This is a very simple project that I have created along with Scrimba React course as a training for creating a static react page",
-    pic: "/personalPage/images/react facts.jpg",
-    github: "https://github.com/mohamedashrraf222/ReactFactsScrimba.git",
-    key: 7,
-    demo: "https://mohamedashrraf222.github.io/ReactFactsScrimba/",
-    type: project,
-  },
-  {
-    name: "Travel Journal",
-    descreption:
-    "This is a very simple project that I have created as a training for creating a static react page",
-    pic: "/personalPage/images/travelJornal.jpg",
-    github: "https://github.com/mohamedashrraf222/travel-journal.git",
-    key: 8,
-    demo: "https://mohamedashrraf222.github.io/travel-journal/",
-    type: project,
-  },
-  {
-    name: "personal business card",
-    descreption:
-    "This project is simple, I have created it for myself and as a training for creating a static react page",
-    pic: "/personalPage/images/personalCard.jpg",
-    github: "https://github.com/mohamedashrraf222/business-card.git",
-    key: 9,
-    demo: "https://mohamedashrraf222.github.io/business-card/",
-    type: project,
-  },
-  {
-    name: "Mutiple page",
-    descreption:
-    "This is a very simple static page that's created with only css and html that I created when I was learning html and css with Freecodecamp.",
-    pic: "/personalPage/images/myPage.jpg",
-    github: "",
-    key: 10,
-    demo: "https://codepen.io/mohamedashrraf222/pen/RwaYaYy?editors=1100",
-    type: project,
   },
 ];
 

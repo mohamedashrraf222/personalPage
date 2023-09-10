@@ -1,9 +1,6 @@
-import Header from "./Header";
-import Squars from "./Squars";
 import Project from "./projectComp";
-import Footer from "./footer";
 import myProjects from "./../../../public/projects";
-import "../styles/projects.css";
+import "../styles/projectComp.css";
 
 import React, { useState, useEffect, useRef } from "react";
 
@@ -36,39 +33,33 @@ const MyComponent = ({ children }) => {
 
 const Projects = () => {
   return (
-    <div>
-      <Squars />
-      <Header />
-      <div className="container" style={{ marginTop: "13vmin" }}>
-        <div className="skills">
-          <h1>
-            web apps <i className="fa-brands fa-medapps"></i>
-          </h1>
-          {/* note that the class skillsNote is in the cirtificates.css file */}
-          <div className="skillsNote" >
-            Note: Node web apps take time to load becuase the server is deployed
-            for free.
-          </div>
-          <MyComponent>
-            {myProjects.map((project) => {
-              return <Project data={project} key={project.key} type="app" />;
-            })}
-          </MyComponent>
+    
+    <div className="Projectscontainer">
+      <div className="skills">
+        <h1>
+          web apps <i className="fa-brands fa-medapps"></i>
+        </h1>
+        {/* note that the class skillsNote is in the cirtificates.css file */}
+        <div className="skillsNote">
+          Note: Node web apps take time to load becuase the server is deployed
+          for free.
         </div>
-        <div className="skills">
-          <h1>
-            Static Projects <i className="fa-solid fa-earth-americas"></i>
-          </h1>
-          <MyComponent>
-            {myProjects.map((project) => {
-              return (
-                <Project data={project} key={project.key} type="project" />
-              );
-            })}
-          </MyComponent>
-        </div>
+        <MyComponent>
+          {myProjects.map((project) => {
+            return <Project data={project} key={project.key} type="app" />;
+          })}
+        </MyComponent>
       </div>
-      <Footer />
+      <div className="skills">
+        <h1>
+          Static Projects <i className="fa-solid fa-earth-americas"></i>
+        </h1>
+        <MyComponent>
+          {myProjects.map((project) => {
+            return <Project data={project} key={project.key} type="project" />;
+          })}
+        </MyComponent>
+      </div>
     </div>
   );
 };

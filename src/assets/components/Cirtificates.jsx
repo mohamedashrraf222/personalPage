@@ -1,6 +1,3 @@
-import Squars from "./Squars";
-import Header from "./Header";
-import Footer from "./footer";
 import "../styles/cirtificates.css";
 import myData from "../../../public/courses";
 
@@ -68,8 +65,6 @@ const Certificates = () => {
 
   return (
     <div>
-      <Squars />
-      <Header />
       <div className="cirtificatesPage">
         <div className="skills">
           <h1>
@@ -108,11 +103,14 @@ const Certificates = () => {
         <div className="skills" style={{ marginTop: "10px" }}>
           <h1>
             Certificates <i className="fa-solid fa-certificate"></i>
-
           </h1>
-          {windowWidth >= 900 ? <div className="skillsNote">
+          {windowWidth >= 900 ? (
+            <div className="skillsNote">
               Note: Hover over the cirtificate to know details about the course.
-            </div> : ""}
+            </div>
+          ) : (
+            ""
+          )}
           <div className="cirtifContainer">
             <MyComponent>
               {myData.map((cirtif) => {
@@ -121,7 +119,6 @@ const Certificates = () => {
             </MyComponent>
           </div>
         </div>
-        <Footer />
       </div>
     </div>
   );

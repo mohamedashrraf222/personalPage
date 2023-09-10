@@ -1,13 +1,8 @@
-import Squars from "./Squars";
-import Header from "./Header";
-import Footer from "./footer";
+
 import "../styles/contact.css"
 
 const Contact = () => {
   return (
-    <dir>
-      <Squars />
-      <Header />
       <div id="contact-me">
         <div>
           <h1> <i className="fa-regular fa-envelope"></i> Email : <a href="mailto:mohamedashrraf222@gmail.com">mohamedashrraf222@gmail.com</a> </h1>
@@ -16,8 +11,6 @@ const Contact = () => {
         </div>
       <img src="/personalPage/images/contact2.svg" className="mySVG" />
       </div>
-        <Footer />
-    </dir>
   );
 };
 

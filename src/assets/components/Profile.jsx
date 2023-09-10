@@ -14,15 +14,12 @@ function Profile() {
 
   return (
     <div className="profile-container">
-      <img
-        src="/personalPage/download.jfif"
-        alt="Profile"
-        className={`profile-picture ${showImage ? "show" : ""}`}
-      />
+      <div className={`profile-picture ${showImage ? "show" : ""}`}>
+        <img src="/personalPage/Mohamed Asharf.jpeg" alt="Profile" />
+      </div>
       <div className={`profile-info ${showName ? "show" : ""}`}>
-        
         <h2 className={`profile-name ${showName ? "show" : ""}`}>
-          Hi, I'm Mohamed Ashraf
+          Hi, I'm Mohamed Ashraf !
         </h2>
         <p className={`profile-summary ${showSummary ? "show" : ""}`}>
           Front-End Developer with proven skills in building professional
