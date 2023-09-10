@@ -1,13 +1,10 @@
-// import Home from "./assets/components/Home";
-// import Projects from "./assets/components/Projects";
 import Contact from "./assets/components/Contact";
-import Certificates from "./assets/components/Cirtificates";
 import Profile from "./assets/components/Profile";
 import Footer from "./assets/components/footer";
 import AllProjects from "./assets/components/AllProjects";
 import "./assets/mainStyle.css";
 import AllCertificates from "./assets/components/AllCertificates";
-import { Routes, Route, json, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
@@ -64,7 +61,6 @@ function App() {
       <div className="gradiant gradiantThree"></div>
       <div className="gradiant gradiantFour"></div>
     </main>
-    //   <Route path="*" element={<Home />} />
   );
 }
 
