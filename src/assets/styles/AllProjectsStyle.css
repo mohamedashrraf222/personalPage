@@ -121,13 +121,38 @@ span {
   
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 460px) {
+
+  
+
   .skillsNote {
     font-size: 12px;
   }
+  .projectCard{
+    height: fit-content;
+  }
+
+  .projectSkills{
+    width: 40%;
+  }
+
+  .allLinks{
+    width: 60%;
+  }
+  .allLinks a span{
+    margin-left: 1px;
+  }
+  .allLinks a {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  
 
   .projectCard h1 {
-    font-size: 15px;
+    font-size: 14px;
+  }
+  .projectCard p {
+    margin-bottom: 10px;
   }
   .projectSkill {
     width: 100%;

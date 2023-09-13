@@ -5,7 +5,7 @@ import "./../styles/AllProjectsStyle.css";
 const AllCertificates = () => {
   const Certificate = ({ data }) => {
     return (
-      <div className="projectCard">
+      <div className="projectCard" style={{height:"fit-content"}}>
         <div
           className="firstPart"
           style={{ height: "Auto", marginBottom: "15px" }}
@@ -17,7 +17,7 @@ const AllCertificates = () => {
           <h1>{data.name}</h1>
           <p>{data.about}</p>
         </div>
-        <div className="secondPart" style={{textAlign:"center"}}>
+        <div className="secondPart" style={{display:"flex", justifyContent:"center"}}>
           <div className="allLinks" style={{textAlign:"center", justifyContent:"center", alignItems:"center"}}>
             <a href={data.link} target="_blank" style={{textAlign:"center"}}>
               <i className="fas fa-external-link-alt"></i>{" "}
