@@ -22,16 +22,15 @@ function Profile() {
           Hi, I'm Mohamed Ashraf !
         </h2>
         <p className={`profile-summary ${showSummary ? "show" : ""}`}>
-          Front-End Developer with proven skills in building professional
-          responsive web project applications with HTML, CSS, and JavaScript.
-          Proficient with CSS and JS Frameworks and libraries like Reactjs and
-          jquery. Constantly improve my skills in web development through online
-          courses and projects I build for practice. I write effective
-          algorithms, break a problem down into smaller parts and think
-          carefully about how to solve each part with code. Have strong
-          knowledge of the fundamentals of algorithmic thinking and principles
-          of object-oriented programming. Always aim to learn new skills to make
-          a promising career.
+          Skilled web developer with proficiency extends to front-end
+          technologies like React.js and Bootstrap. along with Python for
+          backend programming. With experience in popular frameworks like Flask
+          and Django. worked with Git, GitHub, and version control. My knowledge
+          of Node.js, Express.js allows me to develop efficient applications.
+          Moreover, I am well-versed in containerization with Docker. With a
+          passion for continuous learning, I am constantly seeking new
+          challenges and opportunities to enhance my skills and deliver
+          exceptional results.
         </p>
       </div>
     </div>
