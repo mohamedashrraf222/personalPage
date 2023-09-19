@@ -3,7 +3,7 @@ let myData = [
     name: "IBM full stack software developer specialization",
     about:
       "In this specialization, I completed 10 courses on various Application Development and Cloud technologies. I have hashands-on working knowledge with HTML, CSS, JavaScript, GitHub,Node.js, React, Cloud Native practices, DevOps, CI/CD, Containers,Docker, Kubernetes, OpenShift, Python programming, Databases, SQL,NoSQL, Django ORM, Bootstrap, Application Security, Microservices,Serverless computing, and more  ",
-    link: "https://coursera.org/verify/profession",
+    link: "https://coursera.org/verify/professional-cert/BNPHNHXKBGDZ",
     picture:
       "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~BNPHNHXKBGDZ/CERTIFICATE_LANDING_PAGE~BNPHNHXKBGDZ.jpeg",
   },
